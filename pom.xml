@@ -4,10 +4,9 @@
     <parent>
         <groupId>com.indeed</groupId>
         <artifactId>common-parent</artifactId>
-        <version>1</version>
+        <version>2</version>
     </parent>
 
-    <groupId>com.indeed</groupId>
     <artifactId>oss-parent</artifactId>
     <version>6-SNAPSHOT</version>
     <packaging>pom</packaging>

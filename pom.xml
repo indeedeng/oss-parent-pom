@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>oss-parent</artifactId>
-    <version>6</version>
+    <version>7-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Parent POM for open source projects from Indeed.com Engineering</name>
     <description>Shared Maven configuration for Indeed.com</description>

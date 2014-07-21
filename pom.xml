@@ -37,16 +37,16 @@
             <id>indeed-office</id>
             <distributionManagement>
                 <repository>
-                    <id>indeed-oss-releases</id>
-                    <name>Indeed OSS Repository</name>
-                    <url>${indeed-oss-releases.upload.url}</url>
+                    <id>indeed-oss-internal-releases</id>
+                    <name>Indeed OSS Internal Releases Repository</name>
+                    <url>${indeed-oss-internal-releases.upload.url}</url>
                     <layout>default</layout>
                     <releases><enabled>true</enabled></releases>
                     <snapshots><enabled>false</enabled></snapshots>
                 </repository>
                 <snapshotRepository>
                     <id>indeed-oss-snapshots</id>
-                    <name>Indeed OSS Repository</name>
+                    <name>Indeed OSS Snapshots Repository</name>
                     <url>${indeed-oss-snapshots.upload.url}</url>
                     <uniqueVersion>true</uniqueVersion>
                     <layout>default</layout>
@@ -55,6 +55,14 @@
                 </snapshotRepository>
             </distributionManagement>
             <repositories>
+                <repository>
+                    <id>indeed-oss-internal-releases</id>
+                    <name>Indeed OSS Internal Releases Repository</name>
+                    <url>${indeed-oss-internal-releases.download.url}</url>
+                    <layout>default</layout>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
                 <repository>
                     <id>indeed-oss-snapshots</id>
                     <name>Indeed OSS Repository</name>

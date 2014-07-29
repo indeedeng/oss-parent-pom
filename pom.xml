@@ -36,15 +36,29 @@
         <profile>
             <id>indeed-office</id>
             <distributionManagement>
+                <repository>
+                    <id>indeed-oss-internal-releases</id>
+                    <name>Indeed OSS Internal Releases Repository</name>
+                    <url>${indeed-oss-internal-releases.upload.url}</url>
+                    <layout>default</layout>
+                </repository>
                 <snapshotRepository>
                     <id>indeed-oss-snapshots</id>
-                    <name>Indeed OSS Repository</name>
+                    <name>Indeed OSS Snapshots Repository</name>
                     <url>${indeed-oss-snapshots.upload.url}</url>
                     <uniqueVersion>true</uniqueVersion>
                     <layout>default</layout>
                 </snapshotRepository>
             </distributionManagement>
             <repositories>
+                <repository>
+                    <id>indeed-oss-internal-releases</id>
+                    <name>Indeed OSS Internal Releases Repository</name>
+                    <url>${indeed-oss-internal-releases.download.url}</url>
+                    <layout>default</layout>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
                 <repository>
                     <id>indeed-oss-snapshots</id>
                     <name>Indeed OSS Repository</name>
@@ -77,6 +91,11 @@
                             <serverId>sonatype-nexus-staging</serverId>
                             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                         </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>versions-maven-plugin</artifactId>
+                        <version>2.1</version>
                     </plugin>
                 </plugins>
             </build>

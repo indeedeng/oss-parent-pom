@@ -41,8 +41,6 @@
                     <name>Indeed OSS Internal Releases Repository</name>
                     <url>${indeed-oss-internal-releases.upload.url}</url>
                     <layout>default</layout>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>false</enabled></snapshots>
                 </repository>
                 <snapshotRepository>
                     <id>indeed-oss-snapshots</id>
@@ -50,8 +48,6 @@
                     <url>${indeed-oss-snapshots.upload.url}</url>
                     <uniqueVersion>true</uniqueVersion>
                     <layout>default</layout>
-                    <releases><enabled>false</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
                 </snapshotRepository>
             </distributionManagement>
             <repositories>

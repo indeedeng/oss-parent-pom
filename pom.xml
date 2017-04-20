@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.indeed</groupId>
         <artifactId>common-parent</artifactId>
-        <version>14-SNAPSHOT</version>
+        <version>16-SNAPSHOT</version>
     </parent>
 
     <artifactId>oss-parent</artifactId>
-    <version>18-SNAPSHOT</version>
+    <version>19-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Parent POM for open source projects from Indeed.com Engineering</name>
     <description>Shared Maven configuration for Indeed.com</description>
